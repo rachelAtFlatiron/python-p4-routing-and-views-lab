@@ -2,6 +2,7 @@
 
 from flask import Flask, jsonify, make_response, request
 
+#application context allows us to avoid passing around app between functions and file to file (making things more efficient and avoiding circular imports)
 app = Flask(__name__)
 
 @app.route('/')
